@@ -1,18 +1,12 @@
 
 import {BrowserRouter,Route,Routes} from "react-router-dom"
 
-import "./styles/tailwind.css"
+import "./components/signIned/styles/tailwind.css"
 
 import Signup from "./Pages/Signup"
 import Signin from "./Pages/Signin"
 import { Dashboard } from  "./Pages/Dashboard"
 import { SendMoney } from './components/signIned/sendMoney'
-
-
-
-
-
-
 
 
 function App() {
@@ -23,7 +17,7 @@ function App() {
 
       <Route path="/Signup" element={<Signup></Signup>}></Route>
       <Route path="/Signin" element={<Signin></Signin>}></Route>
-      <Route path="/Send" element={<SendMoney></SendMoney>}></Route>
+      <Route path="/send" element={<SendMoney></SendMoney>}></Route>
       <Route path="/Dashboard" element={<Dashboard></Dashboard>}></Route>
 
 
